@@ -1,0 +1,42 @@
+.card {
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(213, 213, 213, 0.11);
+  border-radius: 8px;
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(213, 213, 213, 0.3);
+  padding: 5px;
+}
+
+.btn {
+  font-size: 13px;
+}
+
+.btn:hover {
+  color: #006b80;
+}
+
+.btn:hover::after {
+  width: 50%;
+  transition: all ease-in-out 600ms;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #006b80;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
